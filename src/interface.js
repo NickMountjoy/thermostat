@@ -6,9 +6,11 @@ $( document ).ready(function() {
     $( "#temperature" ).html( thermostat.temperature() );
     $( "#powersavestatus" ).html( thermostat.powerSaveStatus() );
     $( "#energy-usage" ).css( "color", thermostat.energyUsage() );
+    $( "#rectangle" ).css( "background-color", thermostat.energyUsage() );
   }
 
   updateDisplay();
+
 
   $( "#temperature-increase" ).on( "click", function( event ) {
     thermostat.increase();
