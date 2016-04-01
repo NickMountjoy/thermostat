@@ -64,15 +64,13 @@ describe("Thermostat", function() {
     expect(thermostat.powerSaveStatus()).toBe("OFF");
   });
 
-
-
   it("allows the temperature to be reset to default", function() {
     thermostat.increase();
     thermostat.reset();
     expect(thermostat.temperature()).toEqual(thermostat.DEFAULT_TEMPERATURE);
   });
 
-  describe("displays colour corresponding to defined temp ranges", function() {
+  describe("Displays colour corresponding to defined temp ranges", function() {
     it("shows green if current temp < 18", function() {
       thermostat.currentTemperature = 17;
       expect(thermostat.energyUsage()).toEqual("green");
@@ -87,5 +85,7 @@ describe("Thermostat", function() {
       thermostat.currentTemperature = 28;
       expect(thermostat.energyUsage()).toEqual("red");
     });
+
+
   });
 });

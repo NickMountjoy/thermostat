@@ -14,21 +14,17 @@
 <body>
   <section>
   <div>
-    <h1>Outputs</h1>
-    <div>
-      <h2><span id="temperature"></span> DegC</h2>
-    </div>
 
     <div>
-      <h2 id="energy-usage">Usage:</h2>
+      <p><span id="temperature"></span> DegC</p>
     </div>
+
     <div id="rectangle"></div>
 
     <div>
-      <h2>PowerSaveMode: <span id="powersavestatus">ON</span></h2>
+      <p>PowerSaveMode: <span id="powersavestatus">ON</span></p>
     </div>
 
-    <h1>Inputs</h1>
     <div>
       <button id="temperature-increase">Up</button>
       <button id="temperature-decrease">Down</button>
@@ -41,6 +37,15 @@
       <button id="temperature-reset">Reset</button>
     </div>
   </div>
+
+  <section>
+      <p>Local temperature: <span id="local-temperature"><span></p>
+        <form id="choose-city">
+          <input id="current-city" type="text" placeholder="Enter a city"></input>
+          <input type="submit"></input>
+        </form>
+  </section>
+
   </section>
 
 </body>

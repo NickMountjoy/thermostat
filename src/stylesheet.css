@@ -1,6 +1,9 @@
 body {
   text-align: center;
   font-family: verdana;
+  font-size: 40px;
+  color: white;
+  background-image: url("http://bit.ly/21WEKZ6");
 }
 
 .green-status {
